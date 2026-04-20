@@ -1,0 +1,53 @@
+Ya que los vidrios "flotantes" de 851 a veces caían, se decidió eliminarlos para cuidar la seguridad de la comunidad. Todos excepto 1, para mantener el recuerdo.
+
+Por protocólos de seguridad, se tienen que seguir ciertas reglas al removerlos. Se deben escoger 2 vidrios distintos, cuya diferencia de alturas sea menor o igual a 1 y remover el menor. 
+Esto se puede hacer las veces que sea necesario. (Si ambos vidrios tienen la misma altura, se puede remover cualquiera, pero solo 1).
+
+Es decir, para un par de vidrios i, j (i≠j) con alturas ai y aj, se puede eliminar el de menor altura si y solo si |ai−aj|≤1.
+
+Dada una lista de las alturas de todos los n vidrios, ¿Es posible remover todos excepto 1?.
+
+(Nota: Solo importa la diferencia de altura de los vidrios, no su posición horizontal)
+Input
+
+La primera línea del input es un entero t (1≤t≤1000) — el número de casos de prueba. Luego vienen los t casos de prueba.
+
+La primera línea de un caso de prueba es un entero n (1≤n≤50) — la cantidad de vidrios. La segunda línea de un caso de prueba contiene n enteros a1,a2,…,an (1≤ai≤100), donde ai es la altura del vidrio número i.
+Output
+
+Para cada caso de prueba, imprime "YES" si se pueden eliminar todos los vidrios menos uno, siguiendo las medidas de seguridad. Si no es posible, imprime "NO".
+Example
+Input
+Copy
+
+5
+3
+1 2 2
+4
+5 5 5 5
+3
+1 2 4
+4
+1 3 4 4
+1
+100
+
+Output
+Copy
+
+YES
+YES
+NO
+NO
+YES
+
+Note
+
+En el primer caso de prueba, podemos dejar solo 1 vidrio de la siguiente manera:
+
+    Elegir los vidrios i=1 y j=3, y sacar ai (quedando los vidrios [2;2]);
+    Elegir los vidrios i=1 y j=2, y sacar aj (quedando solo el vidrio [2]). 
+
+En el segundo caso de prueba, se pueden remover en cualquier orden.
+
+En el tercer caso de prueba, es imposible eliminar el vidrio de altura 4.
