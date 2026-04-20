@@ -1,0 +1,43 @@
+Dado un arreglo de n enteros positivos, determina si es posible ordenarlo de forma no-decreciente usando la siguiente operación.
+
+    Elegir un índice i (1≤i<n), y restar min(ai,ai+1) a ai y ai+1. 
+
+La operación se puede usar cualquier cantidad de veces.
+Input
+
+La primera línea contiene un entero t (1≤t≤104) — la cantidad de casos de prueba. Luego vienen los casos de prueba.
+
+La primera línea de cada caso de prueba contiene un entero n (2≤n≤2⋅105) — la cantidad de números del arreglo.
+
+La segunda línea de cada caso de prueba contiene a1,a2,…,an (1≤ai≤109) — los valores del arreglo.
+
+Se puede considerar que la suma de n para todos los casos de prueba es menor a 2⋅105.
+Output
+
+Si el arreglo se puede ordenar de manera no-decreciente, imprime "YES". En caso contrario imprime "NO".
+
+Puedes imprimir la respuesta en cualquier formato. Es decir, respuestas como "yEs", "yes", y"Yes" también son válidas.
+Example
+Input
+Copy
+
+5
+5
+1 2 3 4 5
+4
+4 3 2 1
+4
+4 5 2 3
+8
+4 5 4 5 4 5 4 5
+9
+9 9 8 2 4 4 3 5 3
+
+Output
+Copy
+
+YES
+NO
+YES
+YES
+NO
