@@ -1,0 +1,23 @@
+Dada la gran popularidad del nuevo juego del momento, PEAK, se decide crear el campeonato internacional de peak para universitarios (ICPC por sus siglas en inglés). 
+Para este campeonato los equipos pueden estar conformados por cuanta gente quieran, pues podrán pasarse los controles de ser necesario.
+
+Para la selección de equipos de la Universidad de chile asistieron n estudiantes. La habilidad del i-ésimo estudiante está dado por el entero positivo ai.
+
+Se considera que un equipo está OP, y puede llegar a la final del campeonato, si su fuerza es al menos x. La fuerza de un equipo se calcula como la cantidad de 
+estudiantes que lo componen multiplicado por el mínimo de sus habilidades.
+
+Por ejemplo, si un equipo consiste de 4 estudiantes con habilidades [5,3,6,8], entonces la fuerza del equipo es 4⋅min([5,3,6,8])=12.
+
+Encuentra la cantidad máxima de equipos OP que se puedan armar, dado que un equipo debe tener al menos un estudiante y todos los estudiantes deben ser parte de un equipo.
+Input
+
+Cada La primera línea contiene un entero t (1≤t≤104) — el número de casos de prueba. La descripción de cada caso es la que sigue.
+
+La primera línea del caso contiene dos enteros, n y x (1≤n≤2⋅105, 1≤x≤109) — el número de estudiantes y la fuerza minima para que un equipo esté OP.
+
+La segunda línea del caso contiene n enteros ai (1≤ai≤109) — la habilidad de cada estudiante.
+
+Está garantizado que la suma de los n sobre todos los casos de prueba no excede 2⋅105.
+Output
+
+Para cada caso de prueba imprime el máximo número de equipos OP que se pueden armar, es decir, el máximo número de equipos con fuerza a lo menos x.
