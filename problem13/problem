@@ -1,0 +1,56 @@
+Martina es una criatura extraña. Normalmente, cuando la gente duerme, sale un “zzz” de sus bocas, pero de la boca de Martina sale en cambio un string s de largo n.
+
+Hoy Martina se quedó dormida en la casa de Florencia. Mientras dormía, Martina realizó un pequeño proceso sobre s. Martina tiene un string favorito p. 
+Determinó todas las posiciones x1<x2<…<xk donde p calza con s. Más formalmente, para cada xi (1≤i≤k) se cumple la condición sxisxi+1⋯sxi+|p|−1=p.
+
+Luego Martina escribió en un papel alguna subsecuencia de x1,x2,…,xk (posiblemente no escribió nada). Aquí una secuencia b es una subsecuencia de una secuencia a 
+si y solo si podemos transformar a en b eliminando algunos de sus elementos (quizás ninguno o todos).
+
+Después de que Florencia despertó, Martina le contó todo. Ella no podía recordar el string s, pero sabía que tanto p como s contienen solo letras inglesas minúsculas,
+y además tenía la subsecuencia que Martina había escrito en el papel.
+
+Florencia se pregunta cuántos valores posibles puede tener s. Le preguntó a vi, pero no era lo suficientemente inteligente para resolverlo. Así que Florencia te pidió calcular este número por ella.
+
+La respuesta puede ser muy grande, así que Florencia quiere que imprimas la respuesta módulo 109+7.
+Input
+
+La primera línea contiene dos enteros n y m, el largo de s y el largo de la subsecuencia que escribió Martina (1≤n≤106 y 0≤m≤n−|p|+1).
+
+La segunda línea contiene el string p (1≤|p|≤n).
+
+La siguiente línea contiene m enteros separados por espacios y1,y2,...,ym, la subsecuencia de Martina (1≤y1<y2<⋯<ym≤n−|p|+1).
+Output
+
+En una sola línea imprime la respuesta módulo 1000000007.
+Examples
+Input
+Copy
+
+6 2
+ioi
+1 3
+
+Output
+Copy
+
+26
+
+Input
+Copy
+
+5 2
+ioi
+1 2
+
+Output
+Copy
+
+0
+
+Note
+
+En el primer caso de ejemplo, todos los strings de la forma "ioioi?" donde el signo de interrogación se reemplaza por cualquier letra inglesa cumplen la condición.
+
+Aquí |x| denota el largo del string x.
+
+Ten en cuenta que es posible que no exista tal string (la respuesta es 0).
