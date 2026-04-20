@@ -1,0 +1,57 @@
+Javier está participando en la reconocida competencia ICPC, pero justo le tocó un teclado que está malo.
+
+Cada vez que presiona la tecla 'b' se borra la última letra minúscula del string escrito. Si no hay letras minúsculas, no tiene efecto.
+
+De manera similar, cuando presiona 'B' se borra la última letra mayúscula del string escrito. Si no hay letras mayúsculas, no tiene efecto.
+
+En ambos casos, las letras 'b' y 'B no son agregadas al string al ser presionadas.
+
+Considera un ejemplo donde la secuencia de teclas presionadas es "iGcppBbcucEhileB". En este caso, el string escrito cambia de esta manera:
+
+"" →i "i" →G "iG" →c "iGc" →p "iGcp" →p "iGcpp" →B "icpp" →b "icp" →c "icpc" →u "icpcu" →c "icpcuc" →E "icpcucE" →h "icpcucEh". →i "icpcucEhi". →l "icpcucEhil". →e "icpcucEhile". →B "icpcuchile".
+
+Dada una secuencia de teclas presionadas, imprime el string resultante si se presionan en ese orden en el teclado de Javier.
+Input
+
+La primera línea contiene un entero t (1≤t≤1000), el número de casos de prueba.
+
+A continuación siguen t líneas no vacías, que consisten en caracteres minúsculas y mayúsculas del alfabeto latino.
+
+Se garantiza que cada línea contiene al menos una letra y la suma de los largos de las líneas no excede 106.
+Output
+
+Para cada caso de prueba, imprime el resultado de presionar esa secuencia de teclas en el teclado de Javier. Si el resultado es vacío, imprime una línea vacía.
+Example
+Input
+Copy
+
+12
+ARaBbbitBaby
+YetAnotherBrokenKeyboard
+Bubble
+Improbable
+abbreviable
+BbBB
+BusyasaBeeinaBedofBloomingBlossoms
+CoDEBARbIES
+codeforces
+bobebobbes
+b
+TheBBlackbboard
+
+Output
+Copy
+
+ity
+YetnotherrokenKeoard
+le
+Imprle
+revile
+
+usyasaeeinaedofloominglossoms
+CDARIES
+codeforces
+es
+
+helaoard
+
