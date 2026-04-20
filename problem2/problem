@@ -1,0 +1,65 @@
+En un momento de iluminación, a David se le ocurrió el tema para su tesis de magíster, un nuevo algoritmo de ordenamiento que decidió llamar davicomsortTM′nt.
+
+Para mostrarte como funciona, David te entrega una permutación de largo impar, es decir, un arreglo a=[a1,a2,…,an] de enteros distintos, desde el 1 hasta el n, dónde n es impar.
+
+Luego, te explica que el algoritmo davicomsortTM′nt funciona de la siguiente manera.
+
+Hay un procedimiento auxiliar, f(i), que recibe un único argumento i(1≤i≤n−1) y hace lo siguiente:
+
+    Si ai>ai+1, los valores de ai y ai+1 se intercambian.
+    De lo contrario, la permutación no cambia. 
+
+El algoritmo en sí hace varias iteraciones, comenzando desde el 1. En la i-ésima iteración, davicomsortTM′nt hace una de dos cosas:
+
+    Si i es impar, llama a f(1),f(3),…,f(n−2).
+    Si i es par, llama a f(2),f(4),…,f(n−1). 
+
+David pudo demostrar que el algoritmo se detiene después de una cantidad finita de pasos, pero no sabe como calcular cuantas iteraciones se necesitan. 
+Dada una permutación, ¿puedes calcular en cuantas iteraciones se detiene el algoritmo y salvar la tesis de David?
+Input
+
+Cada test contiene múltiples casos de prueba. La primera línea contiene la cantidad de casos de prueba t(1≤t≤100). La descripción de los casos de prueba consiste en:
+
+    La primera línea de cada caso de prueba contiene un solo entero n(3≤n≤999;n es impar) — la longitud de la permutación.
+    La segunda línea contiene n enteros distintos, a1,a2,…,an(1≤ai≤n)​ — la permutación en sí. 
+
+Se garantiza que la suma de todos los n a lo largo de los casos de prueba no excede 999.
+Output
+
+Para cada caso de prueba debes imprimir el número de iteraciones tal que el arreglo quede ordenado de forma creciente, si el arreglo ya está ordenado imprime 0.
+Example
+Input
+Copy
+
+3
+3
+3 2 1
+7
+4 5 7 1 3 2 6
+5
+1 2 3 4 5
+
+Output
+Copy
+
+3
+5
+0
+
+Note
+
+En el primer caso, la permutación cambia de la siguiente manera:
+
+    Después de la 1a iteración: [2,3,1];
+    Después de la 2a iteración: [2,1,3];
+    Después de la 3a iteración: [1,2,3]. 
+
+En el primer caso, la permutación cambia de la siguiente manera:
+
+    Después de la 1a iteración: [4,5,1,7,2,3,6];
+    Después de la 2a iteración: [4,1,5,2,7,3,6];
+    Después de la 3a iteración: [1,4,2,5,3,7,6];
+    Después de la 4a iteración: [1,2,4,3,5,6,7];
+    Después de la 5a iteración: [1,2,3,4,5,6,7]. 
+
+En el tercer caso de prueba, la permutación ya está ordenada. Por ende, la respuesta es 0.
