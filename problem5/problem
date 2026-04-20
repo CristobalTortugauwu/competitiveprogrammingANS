@@ -1,0 +1,57 @@
+Dmitri va a hacer una fiesta en su casa este sábado!!! El asado vegano más esperado del año. El evento estará genial e iran sus mejores amistades. 
+Hay un solo problema... Dmitri sabe que su mamá estará molesta si llega demasiada gente, por lo que hizo una lista para asegurarse que solo entren sus invitadxs.
+
+Tu misión como amigx de Dmitri es avisarle si entró una persona nueva o si la persona que está entrando ya estuvo en la casa antes. Vas a recibir una lista
+con n nombres de personas y para cada persona tienes que decir si ya estuvo en la casa o no.
+
+Formalmente, para un nombre ni, el i-ésimo nombre que recibes, imprime "YES" si existe un índice j tal que ni=nj and j<i, caso contrario, imprimes "NO" .
+Input
+
+La primera línea de entrada contiene un entero n (1≤n≤100) — el número de nombres en la lista.
+
+Las siguientes n líneas contienen un nombre ni, que consiste en letras minúsculas. La longitud de cada nombre está entre 1 y 100.
+Output
+
+Salida n líneas, cada una conteniendo ya sea "YES" o "NO" (sin comillas), dependiendo de si este nombre ya estaba presente en la lista o no.
+
+Puedes imprimir cada letra mayúscula o minúscula, da igual.
+Examples
+Input
+Copy
+
+6
+arias
+cote
+blaz
+oliva
+blaz
+oliva
+
+Output
+Copy
+
+No
+nO
+NO
+no
+YeS
+yeS
+
+Input
+Copy
+
+3
+davicom
+davicom
+davicom
+
+Output
+Copy
+
+nO
+yEs
+yeS
+
+Note
+
+En el caso de prueba 1, para i=5 existe j=3 tal que ni=nj y j<i, lo que significa que la respuesta para i=5 es "YES".
