@@ -1,0 +1,63 @@
+En el discord del ramo hay n tickets abiertos que Vi debe responder, el i-ésimo ticket tiene una urgencia de ai. Vi es capaz de escribir muy rápido, es por ello que cada segundo pasan dos cosas sucesivamente:
+
+    Primero, elige un ticket y lo responde. Esto le costará 1 décima de su encuesta docente si la urgencia del ticket es estrictamente mayor que c, de lo contrario le costará 0 décimas.
+    Luego, la urgencia de todos los demás tickets se duplica. 
+
+¿Cuál es el mínimo de décimas que Vi debe perder para poder responder todos los tickets?
+Input
+
+La primera línea contiene un entero, t (1≤t≤1000), la cantidad de casos de prueba. La descripción de cada caso es la que sigue.
+
+La primera línea de cada caso tiene dos enteros n y c (1≤n≤30, 1≤c≤109).
+
+La segunda línea contiene n enteros, a1,a2,…,an (1≤ai≤109) — la urgencia de cada ticket.
+Output
+
+Para cada caso debes imprimir un único entero — el mínimo de décimas que Vi puede perder al responder todos los tickets.
+Example
+Input
+Copy
+
+4
+5 10
+10 4 15 1 8
+3 42
+1000000000 1000000000 1000000000
+10 30
+29 25 2 12 15 42 14 6 16 9
+10 1000000
+1 1 1 1 1 1 1 1 1 864026633
+
+Output
+Copy
+
+2
+3
+6
+1
+
+Note
+
+En la siguiente explicación:
+
+    Números en azul representan tickets que respondió sin perder décimas,
+    Números en rojo representan los tickets donde perdió 1 décima al responderlos,
+    Números en negro representan los tickets que no ha respondido. 
+
+En el primer caso, la solución es:
+
+    [10,4,15,1,8]
+    [10,8,30,2,16], 10 lo responde sin perdida, pues 10≤10.
+    [10,8,60,4,32], 8 lo responde sin perdida, pues 8≤10.
+    [10,8,120,8,32], 32 es respondido perdiendo 1 décima, pues 32>10.
+    [10,8,240,8,32], 8 lo responde sin perdida, pues 8≤10.
+    [10,8,240,8,32], 240 lo responde perdiendo 1 décima, pues 240>10. 
+
+En total, Vi pierde 2 décimas de su encuesta docente, se puede demostrar que esto es el óptimo.
+
+En el segundo caso, la solución es:
+
+    [1000000000,1000000000,1000000000]
+    [1000000000,2000000000,2000000000], 1000000000 es respondido perdiendo 1 décima, pues 1000000000>42.
+    [1000000000,2000000000,4000000000], 2000000000 es respondido perdiendo 1 décima, pues 2000000000>42.
+    [1000000000,2000000000,4000000000], 4000000000 es respondido perdiendo 1 décima, pues 4000000000>42. 
