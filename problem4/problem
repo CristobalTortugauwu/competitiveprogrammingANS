@@ -1,0 +1,29 @@
+Siempre que se va dos días seguidos al casino de la universidad, uno termina con una sensación extraña, como si hubiera comido lo mismo que el día anterior ¡siendo que el menú es claramente diferente!
+
+Mientras Dante y David discutían el extraño fenómeno, Rakhel intervino para decir que a ella también le había ocurrido. Poco a poco distintas personas se fueron uniendo a la conversación para contar sus experiencias. Llegó un punto en el que Daniela, exasperada por la revelación, dijo "¡Basta!, aquí hay dos menús de días consecutivos. ¿Qué tan plageado ven el segundo menú?".
+
+Un menú se representa por una secuencia de letras en minúscula del alfabeto inglés. Dado un menú X y un menú Y, el grado de plagio de Y con respecto a X se calcula como el largo del prefijo más largo que pueden tener en común, dada la posibilidad de intercambiar letras del menú Y las veces que quieran.
+Input
+
+La primera línea del input contiene un entero t (1≤t≤500) — donde t es el número de casos de prueba.
+
+Cada caso de prueba tiene una línea que contiene dos secuencias de letras del abecedario inglés a y b (1≤|a|,|b|≤105) — el menú de un día y el menú del día siguiente.
+Output
+
+Para cada caso de prueba, imprime un entero que representa el grado de plagio del menú b con respecto al menú a.
+Examples
+Input
+Copy
+
+3
+hello hey
+here there
+you me
+
+Output
+Copy
+
+2
+4
+0
+
