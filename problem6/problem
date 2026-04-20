@@ -1,0 +1,37 @@
+Cansados de hacer todo a última hora, los auxiliares del Taller de Programación Competitiva B deciden un día sentarse a hacer las m guías que les faltan en el semestre. 
+Deciden que cada guía debe tener un problema de cada nivel de dificultad de la dudosa escala de Javier Oliva. Esta dudosa escala está 
+compuesta por 7 dificultades: 'A', 'B', 'C', 'D', 'E', 'F', y 'G', donde en 'A' van los problemas que Javier encuentra más fáciles y en 'G' los que encuentra más difíciles.
+
+Los auxiliares ya eligieron y tradujeron n problemas, donde el i-ésimo problema tiene una dificultad ai. Sin embargo, no se coordinaron para elegir los problemas, por lo que les pueden faltar problemas por traducir.
+
+Alonso, que estuvo mendigando UBs todo este proceso y no propuso problemas, ahora tiene el trabajo de terminar las m guías. Pero como no quiere trabajar de más, quiere traducir la menor cantidad de problemas posibles.
+
+Por ejemplo, si m=1, n=10, a= 'BGECDCBDED', Alonso solo debe traducir dos problemas: uno de dificultad 'A' y otro de dificultad 'F'.
+Input
+
+La primera línea contiene un entero t (1≤t≤1000) — el número de casos de prueba.
+
+La primera línea de cada caso tiene dos enteros n y m (1≤n≤50, 1≤m≤5) — el número de problemas que ya se tradujeron y la cantidad de guías por hacer respectivamente.
+
+La segunda línea contiene un string a de n caracteres desde 'A' a 'G' — las dificultades de los problemas ya traducidos.
+Output
+
+Para cada caso debes imprimir un único entero — la mínima cantidad de problemas que Alonso debe traducir para completar las m guías.
+Example
+Input
+Copy
+
+3
+10 1
+BGECDCBDED
+10 2
+BGECDCBDED
+9 1
+BBCDEFFGG
+
+Output
+Copy
+
+2
+5
+1
