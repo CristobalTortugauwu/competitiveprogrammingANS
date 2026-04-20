@@ -1,0 +1,28 @@
+Se te da un arreglo que contiene cada número entre 1…n exactamente una vez. Tu tarea es recoger los números del 1 al n en orden creciente.
+
+En cada ronda, recorres el arreglo de izquierda a derecha y recoges tantos números como sea posible. ¿Cuál será el número total de rondas?
+Input
+
+La primera línea de entrada tiene un entero n: el tamaño del arreglo.
+
+La segunda línea tiene n enteros x1,x2,…,xn: los números en el arreglo.
+
+Restricciones:
+
+    1≤n≤2⋅105 
+
+Output
+
+Imprime un entero: el número de rondas requeridas para recogerlos todos.
+Example
+Input
+Copy
+
+5
+4 2 1 5 3
+
+Output
+Copy
+
+3
+
