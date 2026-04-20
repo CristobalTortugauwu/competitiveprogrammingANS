@@ -1,0 +1,86 @@
+Dmitri se enteró de que Arias escribió algo muy desagradable sobre él a un amigo, así que decidió averiguar su contraseña a toda costa y descubrir qué escribió exactamente.
+
+Confiando en la fortaleza de su contraseña, Arias declaró que su contraseña es un string binario de longitud n. También está dispuesto a responder las preguntas de Dmitri del siguiente tipo:
+
+Dmitri dice un string binario t, y Arias responde si es verdad que t es un substring de su contraseña.
+
+Ayuda a Dmitri a averiguar la contraseña en no más de 2n operaciones; de lo contrario, Arias entenderá el truco y dejará de comunicarse con él.
+Input
+
+Cada prueba contiene múltiples casos de prueba. La primera línea contiene el número de casos de prueba t (1≤t≤100). Sigue la descripción de los casos de prueba.
+Interaction
+
+Al comienzo de cada caso de prueba, primero lee n (1≤n≤100) — el tamaño del string binario. Luego procede a adivinarlo.
+
+Para adivinar cada string s, puedes hacer no más de 2n consultas del siguiente tipo:
+
+    "? t", donde t es un string binario tal que (1≤|t|≤n). 
+
+En respuesta a esta consulta, recibirás 1 si t es un substring de s, y 0 en caso contrario.
+
+Una vez que recibas la respuesta, imprime un único string en el siguiente formato:
+
+    "! s", donde s es un string binario de tamaño n. 
+
+Después de eso, procede a resolver el siguiente caso de prueba.
+
+Si haces un intento incorrecto o excedes el límite de 2n intentos, recibirás −1 en lugar de una respuesta y obtendrás el veredicto Wrong answer.
+En este caso, tu programa debe terminar inmediatamente para evitar veredictos indefinidos.
+
+Después de imprimir las consultas, no olvides imprimir un carácter de nueva línea y vaciar el buffer de salida. De lo contrario, recibirás el veredicto Solution "hung". Para vaciar el buffer, usa:
+
+    fflush(stdout) o cout.flush() en C++;
+    System.out.flush() en Java;
+    flush(output) en Pascal;
+    stdout.flush() en Python;
+    consulta la documentación para otros lenguajes. 
+
+Example
+Input
+Copy
+
+4
+3
+
+0
+
+0
+
+1
+
+4
+
+4
+
+2
+
+Output
+Copy
+
+
+
+? 00
+
+? 000
+
+? 010
+
+! 010
+
+! 1100
+
+! 0110
+
+! 10
+
+Note
+
+En el primer ejemplo, se da el string 010. Por lo tanto, las respuestas a las consultas son las siguientes:
+
+"? 00" 00 no es un substring de 010, así que la respuesta es 0.
+
+"? 000" 000 no es un substring, así que la respuesta es 0.
+
+"? 010" 010 es un substring, así que la respuesta es 1.
+
+En el segundo ejemplo, el string es 1100, en el tercero 0110, y en el cuarto 10.
