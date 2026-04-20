@@ -1,0 +1,62 @@
+Tienes dos arreglos a y b, ambos de n enteros positivos (mayores a 0). También tienes un entero k.
+
+En una operación, puedes escoger 2 índices i y j (1≤i,j≤n) e intercambiar los valores ai y bj. Es decir, donde antes estaba ai ahora estará bj y donde antes estaba bj ahora estará ai.
+
+Los índices i y j pueden ser iguales o distintos. Por ejemplo, puedes escoger i=2 y j=2 e intercambiar a2 con b2. O escoger i=3 y j=5 e intercambiar a3 con b5.
+
+Tu objetivo es, encontrar el máximo valor posible para la suma de todos los elementos de a, usando a lo más k operaciones (puede no ser necesario ocupar todas).
+
+Hay t casos de prueba.
+Input
+
+La primera línea del input contiene un entero t (1≤t≤200) — el número de casos de prueba. Luego vienen los t casos de prueba.
+
+La primera línea de cada caso de prueba tiene 2 enteros n y k (1≤n≤30;0≤k≤n) — el número de elementos en a y b, y el máximo número de operaciones que puedes utilizar, respectivamente.
+
+La segunda línea de cada caso de prueba tiene n enteros a1,a2,…,an (1≤ai≤30), los números de a.
+
+La tercera línea de cada caso de prueba tiene n enteros b1,b2,…,bn (1≤bi≤30), los números de b.
+Output
+
+Para cada caso de prueba, imprime la máxima suma posible, que se puede obtener sumando todos los elementos de a, usando a lo más k operaciones.
+Example
+Input
+Copy
+
+5
+2 1
+1 2
+3 4
+5 5
+5 5 6 6 5
+1 2 5 4 3
+5 3
+1 2 3 4 5
+10 9 10 10 9
+4 0
+2 2 4 3
+2 4 2 3
+4 4
+1 2 2 1
+4 4 5 4
+
+Output
+Copy
+
+6
+27
+39
+11
+17
+
+Note
+
+En el primer caso de prueba, se pueden intercambiar a1=1 y b2=4, quedando a=[4,2] (suma 6) y b=[3,1].
+
+En el segundo caso de prueba, no es necesario usar ninguna operación.
+
+En el tercer caso de prueba, se pueden intercambiar los 3 pares: a1=1 y b1=10, a3=3 y b3=10, a2=2 y b4=10. Quedando a=[10,10,10,4,5] (suma 39) y b=[1,9,3,2,9].
+
+En el cuarto caso de prueba, k=0 así que no se puede intercambiar nada.
+
+En el quinto caso de prueba, podemos intercambiar todos los elementos de a con b, quedando a=[4,4,5,4] (suma 17) y b=[1,2,2,1].
